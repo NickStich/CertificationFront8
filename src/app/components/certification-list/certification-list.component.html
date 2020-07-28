@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Title</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Quarter</th>
+            <th scope="col">Price</th>
+            <th scope="col">Justification</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let certification of certifications">
+            <!-- <td>{{ certification.id }}</td> -->
+            <td>{{ certification.title }}</td>
+            <td>{{ certification.name }}</td>
+            <td>{{ certification.category }}</td>
+            <td>{{ certification.quarter }}</td>
+            <td>{{ certification.price }}</td>
+            <td>{{ certification.justification }}</td>
+            <td>{{ certification.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
